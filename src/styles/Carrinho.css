@@ -1,0 +1,66 @@
+.carrinho-container {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.carrinho-vazio {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.itens-carrinho {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.item-carrinho {
+  display: flex;
+  gap: 1rem;
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  align-items: center;
+}
+
+.imagem-carrinho {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+}
+
+.detalhes-carrinho {
+  flex-grow: 1;
+}
+
+.nome-produto {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.preco,
+.quantidade,
+.subtotal {
+  margin: 0.3rem 0;
+}
+
+.total-carrinho {
+  margin-top: 2rem;
+  text-align: right;
+}
+
+.botao-finalizar {
+  background-color: #2e7d32;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

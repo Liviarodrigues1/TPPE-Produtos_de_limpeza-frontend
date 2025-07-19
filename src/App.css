@@ -1,42 +1,84 @@
+/* Estilo base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  width: 100%;
+  min-height: 100vh;
 }
 
+/* Cabeçalho azul superior */
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #002f6c;
+  color: white;
+  padding: 15px 40px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Logo */
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Campo de busca */
+.search-input {
+  flex: 1;
+  max-width: 400px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  margin: 0 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Ações (login e carrinho) */
+.header-actions {
+  display: flex;
+  gap: 20px;
+  font-size: 0.9rem;
+  align-items: center;
 }
 
-.card {
-  padding: 2em;
+.header-actions a {
+  color: #fff;
+  text-decoration: underline;
 }
 
-.read-the-docs {
-  color: #888;
+/* Menu principal */
+.main-nav {
+  background-color: #f5f5f5;
+  padding: 12px 40px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  gap: 20px;
+  font-weight: bold;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #002f6c;
+}
+
+.main-nav a:hover {
+  color: #ff7a00;
+}
+
+/* Conteúdo principal */
+.main-content {
+  padding: 40px;
 }
